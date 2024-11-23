@@ -24,4 +24,7 @@ dist-ssr
 *.sw?
 
 
-components
+# components
+ExpenseDate.jsx
+ExpenseItem.jsx
+Form.jsx
