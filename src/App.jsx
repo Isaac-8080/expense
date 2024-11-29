@@ -1,60 +1,31 @@
+import { useState } from 'react'
 import CardsContainer from './components/CardsContainer'
 import ExpenseItem from './components/ExpenseItem'
-import Form from './components/Form'
+import NewExpense from './components/NewExpense'
+import Form from './Form'
 import './index.css'
+import UserList from './UserList'
 
 function App() {
 
-  const expenseDetails = [
-    {
-      expenseDate : new Date(2024, 10, 13),
-      expenseTitle : 'Car Insurance',
-      expenseAmout : 300.99
-    },
-    {
-      expenseDate : new Date(),
-      expenseTitle : 'Hospital bill',
-      expenseAmout : 300.99
-    },
-    {
-      expenseDate : new Date(2024, 11, 13),
-      expenseTitle : 'Books',
-      expenseAmout : 50.11
-    },
-    {
-      expenseDate : new Date(2024, 11, 13),
-      expenseTitle : 'Car Insurance',
-      expenseAmout : 300.99
-    }
-  ]
+  // const [collectFormData, setcollectFormData] = useState([])
+
+  // const handleFormData = (formData) => {
+  //   setcollectFormData([...collectFormData, formData])
+  // }  
+
 
   return (
+
     <>
+    
+      {/* <div className='h-screen flex items-cente gap-10 justify-center pt-20'>
+        <Form formData={handleFormData} />
+        <UserList list={collectFormData} />
+      </div> */}
 
-      
       <CardsContainer>
-        <Form />
-
-        {/* <ExpenseItem 
-        expenseDate={expenseDetails[0].expenseDate} 
-        expenseTitle={expenseDetails[0].expenseTitle} 
-        expenseAmout={expenseDetails[0].expenseAmout} />
-
-        <ExpenseItem 
-        expenseDate={expenseDetails[1].expenseDate} 
-        expenseTitle={expenseDetails[1].expenseTitle} 
-        expenseAmout={expenseDetails[1].expenseAmout} />
-
-        <ExpenseItem 
-        expenseDate={expenseDetails[2].expenseDate} 
-        expenseTitle={expenseDetails[2].expenseTitle} 
-        expenseAmout={expenseDetails[2].expenseAmout} />
-
-        <ExpenseItem 
-        expenseDate={expenseDetails[3].expenseDate} 
-        expenseTitle={expenseDetails[3].expenseTitle} 
-        expenseAmout={expenseDetails[3].expenseAmout} /> */}
-        
+        <NewExpense />
       </CardsContainer>
 
     </>
