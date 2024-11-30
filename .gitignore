@@ -25,6 +25,6 @@ dist-ssr
 
 
 # components
-ExpenseDate.jsx
+# ExpenseDate.jsx
 # NewExpense.jsx
 ExpenseItem.jsx
